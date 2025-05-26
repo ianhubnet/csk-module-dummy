@@ -1,4 +1,4 @@
-name: Notify csk-packages
+name: Notify `ianhubnet/csk-packages`
 
 # Option #1: Update on tag push.
 # on:
@@ -21,5 +21,9 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.CSK_PAT }}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/ianhubnet/csk-packages/dispatches \
-            -d '{"event_type":"update-submodules","client_payload":{"type":"modules","name":"dummy"}}'
-
+            -d "$(jq -n \
+                --arg type "modules" \
+                --arg name "csk-module-dummy" \
+                --arg repo "${{ github.repository }}" \
+                --arg path "modules/dummy" \
+                '{event_type:"update-submodules", client_payload: {type:$type, name:$name, repository:$repo, path:$path}}')"
