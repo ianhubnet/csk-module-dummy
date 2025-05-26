@@ -4,7 +4,7 @@ defined('BASEPATH') OR die;
 return array(
 	'name'         => 'Dummy Module',
 	'description'  => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',
-	'version'      => '0.1.0',
+	'version'      => '0.1',
 	'license'      => 'MIT',
 	'author'       => 'Kader Bouyakoub',
 	'author_uri'   => 'http://bit.ly/KaderGhb',
