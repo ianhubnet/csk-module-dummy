@@ -24,6 +24,6 @@ jobs:
             -d "$(jq -n \
                 --arg type "modules" \
                 --arg name "csk-module-dummy" \
+                --arg strip "csk-module-" \
                 --arg repo "${{ github.repository }}" \
-                --arg path "modules/dummy" \
-                '{event_type:"update-submodules", client_payload: {type:$type, name:$name, repository:$repo, path:$path}}')"
+                '{"event_type":"update-submodules","client_payload":{"type":$type,"name":$name,"strip":$strip,"repo":$repo}}')"
