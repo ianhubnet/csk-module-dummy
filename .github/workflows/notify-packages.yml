@@ -1,4 +1,4 @@
-name: Notify `ianhubnet/csk-packages`
+name: Sync CSK Packages
 
 # Option #1: Update on tag push.
 # on:
