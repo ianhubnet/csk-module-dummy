@@ -11,11 +11,13 @@ on:
     branches:
       - main
     paths-ignore:
+      - '.github/**'
+      - '.dev/**'
       - '.gitignore'
       - '.gitattributes'
       - '.editorconfig'
-      - '.github/**'
       - 'CITATION.cff'
+      - '*.todolist'
 
 jobs:
   notify:
