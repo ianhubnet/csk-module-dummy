@@ -10,6 +10,12 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '.gitignore'
+      - '.gitattributes'
+      - '.editorconfig'
+      - '.github/**'
+      - 'CITATION.cff'
 
 jobs:
   notify:

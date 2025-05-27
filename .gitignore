@@ -5,7 +5,6 @@ _dev
 # Ignore unnecessary folders.
 .DS_Store
 .phpintel
-license.txt
 
 # Sublime Text cache files
 *.tmlanguage.cache
@@ -20,4 +19,3 @@ license.txt
 !**/.htaccess
 !**/.gitkeep
 !**/index.html
-enabled
