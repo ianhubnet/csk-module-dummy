@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') OR die; ?><div class="row mt-3">
+<?php defined('BASEPATH') || exit('A moment of silence for your attempt.'); ?><div class="row mt-3">
 	<div class="col">
 		<div class="card card-sm">
 			<div class="card-body">

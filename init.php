@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR die;
+defined('BASEPATH') || exit('A moment of silence for your attempt.');
 
 /**
  * This action adds an alert to dashboard to invite the user to 
@@ -46,7 +46,7 @@ add_action('admin_index_footer', function() {
 
 	$content = <<<HTML
 <pre class="mt-3 border"><code class="language-php">&lt;?php
-defined('BASEPATH') OR die;
+defined('BASEPATH') || exit('A moment of silence for your attempt.');
 
 return array(
 	'name'         => 'Dummy Module',
