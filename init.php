@@ -1,15 +1,14 @@
 <?php
-defined('BASEPATH') || exit('A moment of silence for your attempt.');
 
 /**
- * This action adds an alert to dashboard to invite the user to 
+ * This action adds an alert to dashboard to invite the user to
  * delete this dummy module, it's not needed.
  */
-add_action('admin_page_header', function() {
+add_action('admin_page_header', function () {
 	$message = line('The <strong>Dummy Module</strong> is kept to fill dashboard with dummy content, but also to show you how you can add content to it.', 'dummy', false)."<br />";
 	$message .= line('Action: <code>admin_page_header</code>, so this content is visible at the top of all dashboard pages.', 'dummy', false);
 
-	print_alert(nl2br($message), 'warning');
+	echo app()->theme->js_alert(nl2br($message), 'warning');
 });
 
 // --------------------------------------------------------------------
@@ -18,11 +17,11 @@ add_action('admin_page_header', function() {
  * Add content to the top of dashboard main page.
  * @since 	2.1
  */
-add_action('admin_index_header', function() {
+add_action('admin_index_header', function () {
 	$heading = '<strong>'.line('Remove this page\'s dummy content.', 'dummy', false).'</strong><br >';
 	$message = line('The <code>dummy module</code> displays dummy content on the dashboard. Make sure to delete it on production mode.<br />Action: <code>admin_index_header</code>, so this alert is only visible on dashboard main page.', 'dummy', false);
 
-	print_alert($heading.$message, 'info');
+	echo app()->theme->js_alert($heading.$message, 'info');
 });
 
 // --------------------------------------------------------------------
@@ -31,8 +30,8 @@ add_action('admin_index_header', function() {
  * This how you can add a content to the dashboard main page.
  * @since 	2.1
  */
-add_action('admin_index_footer', function() {
-	get_instance()->load->view('dummy/index');
+add_action('admin_index_footer', function () {
+	app()->load->view('dummy/index');
 }, 98);
 
 // --------------------------------------------------------------------
@@ -41,14 +40,14 @@ add_action('admin_index_footer', function() {
  * Display a simple "manifest.json" content in the footer.
  * @since 	2.1
  */
-add_action('admin_index_footer', function() {
-	get_instance()->assets->highlight('stackoverflow-dark');
+add_action('admin_index_footer', function () {
+	app()->assets->highlight('stackoverflow-dark');
 
 	$content = <<<HTML
 <pre class="mt-3 border"><code class="language-php">&lt;?php
 defined('BASEPATH') || exit('A moment of silence for your attempt.');
 
-return array(
+return [
 	'name'         => 'Dummy Module',
 	'description'  => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',
 	'version'      => '0.1.0',
@@ -59,17 +58,17 @@ return array(
 	'tags'         => 'csk, codeigniter, skeleton, dummy',
 
 	// translations
-	'translations' => array(
-		'french' => array(
-			'name' => 'Module factice',
+	'translations' => [
+		'french' => [
+			'name'        => 'Module factice',
 			'description' => 'Ce module est là pour remplir certaines pages de tableau de bord avec du contenu fictif. Supprimez-le pour supprimer toutes ses données.'
-		),
-		'arabic' => array(
-			'name' => 'موديول وهمي',
+		],
+		'arabic' => [
+			'name'        => 'موديول وهمي',
 			'description' => 'يستخدم هذا الموديول لملء بعض صفحات لوحة التحكم بمحتوى وهمي. احذفه للتخلص من كل بياناته.'
-		)
-	)
-);</code></pre>
+		]
+	]
+];</code></pre>
 HTML;
 	echo $content;
 }, 99);
@@ -83,7 +82,7 @@ HTML;
  * @see 	the example below and try to follow it.
  * @since 	2.1
  */
-add_action('admin_index_stats', function() {
+add_action('admin_index_stats', function () {
 	$output = '<div class="col">';
 	$output .= info_box(
 		1235,
