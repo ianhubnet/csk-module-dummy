@@ -22,11 +22,11 @@
 							</tr>
 							<tr>
 								<th>Reports.php</th>
-								<td class="text-wrap">If you want to allow tracking or reporting, simply creaete this controller in your module and make sure to extend <code>Reports_Controller</code> class and use the <code>Kbcore_activities</code> library to manage your module's reports. Link to the module will be listed under the <code>Reports</code> menu dropdown.</td>
+								<td class="text-wrap">If you want to allow tracking or reporting, simply creaete this controller in your module and make sure to extend <code>Reports_Controller</code> class and use the <code>Hub_activities</code> library to manage your module's reports. Link to the module will be listed under the <code>Reports</code> menu dropdown.</td>
 							</tr>
 							<tr>
 								<th>Settings.php</th>
-								<td class="text-wrap">if your module has a settings section, simply createt this controller. For this section, make sure to extends <code>Settings_Controller</code> class and it is advised to use the <code>Kbcore_options</code> library. Link to the settings are will be available under the <code>System</code> menu dropdown.</td>
+								<td class="text-wrap">if your module has a settings section, simply createt this controller. For this section, make sure to extends <code>Settings_Controller</code> class and it is advised to use the <code>Hub_options</code> library. Link to the settings are will be available under the <code>System</code> menu dropdown.</td>
 							</tr>
 						</tbody>
 					</table>
