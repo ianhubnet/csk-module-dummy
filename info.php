@@ -1,5 +1,17 @@
 <?php
 
+defined('BASEPATH') || exit('A moment of silence for your attempt.');
+
+/**
+ * Dummy Module Info
+ *
+ * @package    CiSkeleton\Modules
+ * @category   Dummy\Info
+ * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
+ * @copyright  Copyright (c) 2025, Kader Bouyakoub
+ * @since      0.1
+ */
+
 return [
 	'name' => 'Dummy Module',
 	'description' => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',

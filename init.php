@@ -1,5 +1,17 @@
 <?php
 
+defined('BASEPATH') || exit('A moment of silence for your attempt.');
+
+/**
+ * Dummy Module Init
+ *
+ * @package    CiSkeleton\Modules
+ * @category   Dummy\Init
+ * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
+ * @copyright  Copyright (c) 2025, Kader Bouyakoub
+ * @since      0.1
+ */
+
 /**
  * This action adds an alert to dashboard to invite the user to
  * delete this dummy module, it's not needed.
