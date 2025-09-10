@@ -1,7 +1,5 @@
 <?php
 
-defined('BASEPATH') || exit('A moment of silence for your attempt.');
-
 /**
  * Dummy Module Init
  *
@@ -20,7 +18,7 @@ add_action('admin_page_header', function () {
 	$message = line('The <strong>Dummy Module</strong> is kept to fill dashboard with dummy content, but also to show you how you can add content to it.', 'dummy', false)."<br />";
 	$message .= line('Action: <code>admin_page_header</code>, so this content is visible at the top of all dashboard pages.', 'dummy', false);
 
-	echo app()->theme->js_alert(nl2br($message), 'warning');
+	echo app()->theme->js_alert($message, 'warning');
 });
 
 // --------------------------------------------------------------------
@@ -57,7 +55,6 @@ add_action('admin_index_footer', function () {
 
 	$content = <<<HTML
 <pre class="mt-3 border"><code class="language-php">&lt;?php
-defined('BASEPATH') || exit('A moment of silence for your attempt.');
 
 return [
 	'name'         => 'Dummy Module',

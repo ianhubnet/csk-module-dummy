@@ -10,7 +10,7 @@ By purchasing, downloading, installing, or using this Module, you ("Licensee") a
 
 ## 1. Grant of License
 
-You are granted a limited, non-exclusive, non-transferable, non-sublicensable license to use the "Dummy" module  **in one CSK-powered project** per license purchased. This license is for commercial or personal use, depending on your purchase.
+You are granted a limited, non-exclusive, non-transferable, non-sublicensable license to use the "Dummy" module **in one CSK-powered project** per license purchased. This license is for commercial or personal use, depending on your purchase.
 
 ---
 
@@ -45,7 +45,7 @@ This license is effective until terminated. It will terminate automatically if t
 
 ## 6. No Warranty
 
-The Module is  provided "as is" without warranty of any kind, express or implied. The author is not liable for any damage, loss, or other issues resulting from its use.
+The Module is provided "as is" without warranty of any kind, express or implied. The author is not liable for any damage, loss, or other issues resulting from its use.
 
 ---
 

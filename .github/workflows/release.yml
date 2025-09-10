@@ -34,17 +34,18 @@ jobs:
       - name: Prepare ZIP contents
         run: |
           mkdir "${{ steps.vars.outputs.name }}"
-          rsync -av --exclude='.git' \
-                    --exclude='.github' \
-                    --exclude='.dev' \
-                    --exclude='.gitignore' \
-                    --exclude='.gitattributes' \
-                    --exclude='.editorconfig' \
-                    --exclude='.gitmodules' \
-                    --exclude='CITATION.cff' \
-                    --exclude='*.todolist' \
-                    --exclude="${{ steps.vars.outputs.name }}" \
-                    ./ "${{ steps.vars.outputs.name }}"
+
+          # Always include src directory if it exists
+          if [ -d "src" ]; then
+            cp -r src "${{ steps.vars.outputs.name }}/"
+          fi
+
+          # Optionally include README and LICENSE if present
+          for f in README.md LICENSE.md; do
+            if [ -f "$f" ]; then
+              cp "$f" "${{ steps.vars.outputs.name }}/"
+            fi
+          done
 
       - name: Create ZIP archive
         run: |
