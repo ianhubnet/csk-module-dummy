@@ -18,7 +18,7 @@ add_action('admin_page_header', function () {
 	$message = line('The <strong>Dummy Module</strong> is kept to fill dashboard with dummy content, but also to show you how you can add content to it.', 'dummy', false)."<br />";
 	$message .= line('Action: <code>admin_page_header</code>, so this content is visible at the top of all dashboard pages.', 'dummy', false);
 
-	echo app()->theme->js_alert($message, 'warning');
+	echo driver('hub')->ui->alert($message, 'warning');
 });
 
 // --------------------------------------------------------------------
@@ -31,7 +31,7 @@ add_action('admin_index_header', function () {
 	$heading = '<strong>'.line('Remove this page\'s dummy content.', 'dummy', false).'</strong><br >';
 	$message = line('The <code>dummy module</code> displays dummy content on the dashboard. Make sure to delete it on production mode.<br />Action: <code>admin_index_header</code>, so this alert is only visible on dashboard main page.', 'dummy', false);
 
-	echo app()->theme->js_alert($heading.$message, 'info');
+	echo driver('hub')->ui->alert($heading.$message, 'info');
 });
 
 // --------------------------------------------------------------------
@@ -41,7 +41,7 @@ add_action('admin_index_header', function () {
  * @since 	2.1
  */
 add_action('admin_index_footer', function () {
-	app()->load->view('dummy/index');
+	CI_Controller::get_instance()->load->view('dummy/index');
 }, 98);
 
 // --------------------------------------------------------------------
@@ -51,7 +51,7 @@ add_action('admin_index_footer', function () {
  * @since 	2.1
  */
 add_action('admin_index_footer', function () {
-	app()->assets->highlight('stackoverflow-dark');
+	driver('hub')->assets->highlight('stackoverflow-dark');
 
 	$content = <<<HTML
 <pre class="mt-3 border"><code class="language-php">&lt;?php
