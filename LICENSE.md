@@ -2,7 +2,7 @@
 
 **Copyright © 2025 Ianhub™. All rights reserved.**
 
-This End-User License Agreement ("Agreement") governs the use of the **"Dummy" module** ("Module"), developed for the CodeIgniter Skeleton (CSK) framework.
+This End-User License Agreement ("Agreement") governs the use of the **"Dummy" module** ("Module"), developed for the CiSkeleton (CSK) framework.
 
 By purchasing, downloading, installing, or using this Module, you ("Licensee") agree to be bound by the terms of this Agreement.
 

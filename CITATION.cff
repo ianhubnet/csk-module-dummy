@@ -4,7 +4,7 @@ authors:
 - given-names: "Kader"
   family-names: "Bouyakoub"
   orcid: "https://orcid.org/0000-0002-1184-8061"
-title: "CI Skeleton - Dummy Module"
+title: "CiSkeleton - Dummy Module"
 version: 1.0
 date-released: 2025-05-19
 url: "https://github.com/ianhubnet/csk-module-dummy"

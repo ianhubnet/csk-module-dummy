@@ -1,1 +1,1 @@
-# CI Skeleton - Dummy Module
+# CiSkeleton - Dummy Module
