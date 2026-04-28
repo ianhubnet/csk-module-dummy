@@ -6,7 +6,7 @@
  * @package    CiSkeleton\Modules
  * @category   Dummy\Info
  * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
- * @copyright  Copyright (c) 2025, Kader Bouyakoub
+ * @copyright  Copyright (c) 2018-present, Kader Bouyakoub
  * @since      0.1
  */
 
@@ -16,7 +16,7 @@ return [
 	'version' => '0.1',
 	'license' => 'MIT',
 	'author' => 'Kader Bouyakoub',
-	'author_uri' => 'http://bit.ly/KaderGhb',
+	'author_uri' => 'https://github.com/bkader',
 	'author_email' => 'bkade@mail.com',
 	'tags' => 'csk, codeigniter, skeleton, dummy',
 
