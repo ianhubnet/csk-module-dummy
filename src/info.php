@@ -11,16 +11,21 @@
  */
 
 return [
+	// Info.
 	'name' => 'Dummy Module',
 	'description' => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',
 	'version' => '0.1',
-	'license' => 'MIT',
-	'author' => 'Kader Bouyakoub',
-	'author_uri' => 'https://github.com/bkader',
-	'author_email' => 'bkade@mail.com',
+	'author' => Platform::AUTHOR,
+	'author_uri' => Platform::AUTHOR_URL,
+	'author_email' => Platform::AUTHOR_EMAIL,
 	'tags' => 'csk, codeigniter, skeleton, dummy',
 
-	// translations
+	// Presentation.
+	'icon' => 'flask',
+	'icon_fg' => '#ffffff',
+	'icon_bg' => '#6c757d',
+
+	// Translations.
 	'translations' => [
 		'french' => [
 			'name' => 'Module factice',
