@@ -14,7 +14,7 @@
  * This action adds an alert to dashboard to invite the user to
  * delete this dummy module, it's not needed.
  */
-add_action('admin_page_header', function () {
+add_action('admin_page_header', static function () {
 	$message = line('The <strong>Dummy Module</strong> is kept to fill dashboard with dummy content, but also to show you how you can add content to it.', 'dummy', false)."<br />";
 	$message .= line('Action: <code>admin_page_header</code>, so this content is visible at the top of all dashboard pages.', 'dummy', false);
 
@@ -27,7 +27,7 @@ add_action('admin_page_header', function () {
  * Add content to the top of dashboard main page.
  * @since 	2.1
  */
-add_action('admin_index_header', function () {
+add_action('admin_index_header', static function () {
 	$heading = '<strong>'.line('Remove this page\'s dummy content.', 'dummy', false).'</strong><br >';
 	$message = line('The <code>dummy module</code> displays dummy content on the dashboard. Make sure to delete it on production mode.<br />Action: <code>admin_index_header</code>, so this alert is only visible on dashboard main page.', 'dummy', false);
 
@@ -40,7 +40,7 @@ add_action('admin_index_header', function () {
  * This how you can add a content to the dashboard main page.
  * @since 	2.1
  */
-add_action('admin_index_footer', function () {
+add_action('admin_index_footer', static function () {
 	CI_Controller::get_instance()->load->view('dummy/index');
 }, 98);
 
@@ -50,7 +50,7 @@ add_action('admin_index_footer', function () {
  * Display a simple "manifest.json" content in the footer.
  * @since 	2.1
  */
-add_action('admin_index_footer', function () {
+add_action('admin_index_footer', static function () {
 	driver('hub')->assets->highlight('stackoverflow-dark');
 
 	$content = <<<HTML
@@ -91,7 +91,7 @@ HTML;
  * @see 	the example below and try to follow it.
  * @since 	2.1
  */
-add_action('admin_index_stats', function () {
+add_action('admin_index_stats', static function () {
 	$output = '<div class="col">';
 	$output .= info_box(
 		1235,
