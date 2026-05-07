@@ -7,7 +7,7 @@
  * @category   Dummy\Init
  * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
  * @copyright  Copyright (c) 2018-present, Kader Bouyakoub
- * @since      0.1
+ * @since      0.0.1
  */
 
 /**
@@ -25,7 +25,7 @@ add_action('admin_page_header', static function () {
 
 /**
  * Add content to the top of dashboard main page.
- * @since 	2.1
+ * @since 	0.0.1
  */
 add_action('admin_index_header', static function () {
 	$heading = '<strong>'.line('Remove this page\'s dummy content.', 'dummy', false).'</strong><br >';
@@ -38,7 +38,7 @@ add_action('admin_index_header', static function () {
 
 /**
  * This how you can add a content to the dashboard main page.
- * @since 	2.1
+ * @since 	0.0.1
  */
 add_action('admin_index_footer', static function () {
 	CI_Controller::get_instance()->load->view('dummy/index');
@@ -48,7 +48,7 @@ add_action('admin_index_footer', static function () {
 
 /**
  * Display a simple "manifest.json" content in the footer.
- * @since 	2.1
+ * @since 	0.0.1
  */
 add_action('admin_index_footer', static function () {
 	driver('hub')->assets->highlight('stackoverflow-dark');
@@ -89,7 +89,7 @@ HTML;
  * users, themes or languages count, you can use the
  * "admin_index_stats" action where you echo the info-box element.
  * @see 	the example below and try to follow it.
- * @since 	2.1
+ * @since 	0.0.1
  */
 add_action('admin_index_stats', static function () {
 	$output = '<div class="col">';

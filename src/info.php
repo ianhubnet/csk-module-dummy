@@ -7,14 +7,15 @@
  * @category   Dummy\Info
  * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
  * @copyright  Copyright (c) 2018-present, Kader Bouyakoub
- * @since      0.1
+ * @since      0.0.1
  */
 
 return [
 	// Info.
 	'name' => 'Dummy Module',
 	'description' => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',
-	'version' => '0.1',
+	'version' => '0.0.1',
+	'version_id' => 1,
 	'author' => Platform::AUTHOR,
 	'author_uri' => Platform::AUTHOR_URL,
 	'author_email' => Platform::AUTHOR_EMAIL,
