@@ -1,13 +1,16 @@
 <?php
 
 /**
- * Dummy Module Init
+ * Module Bootstrap File
  *
- * @package    CiSkeleton\Modules
- * @category   Dummy\Init
- * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
- * @copyright  Copyright (c) 2018-present, Kader Bouyakoub
- * @since      0.0.1
+ * Registers module hooks for runtime bootstrapping, activation,
+ * and deactivation.
+ *
+ * @package     CiSkeleton\Modules
+ * @subpackage  Dummy
+ * @category    Bootstrap
+ * @author      Kader Bouyakoub <bkader[at]mail[dot]com>
+ * @copyright   Copyright (c) 2018-present, Kader Bouyakoub
  */
 
 /**

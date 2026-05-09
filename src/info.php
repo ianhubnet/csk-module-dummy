@@ -1,13 +1,16 @@
 <?php
 
 /**
- * Dummy Module Info
+ * Module Information File
  *
- * @package    CiSkeleton\Modules
- * @category   Dummy\Info
- * @author     Kader Bouyakoub <bkader[at]mail[dot]com>
- * @copyright  Copyright (c) 2018-present, Kader Bouyakoub
- * @since      0.0.1
+ * Provides metadata for the module, allowing the module manager
+ * and marketplace to identify, display, and manage it.
+ *
+ * @package     CiSkeleton\Modules
+ * @subpackage  Dummy
+ * @category    Metadata
+ * @author      Kader Bouyakoub <bkader[at]mail[dot]com>
+ * @copyright   Copyright (c) 2018-present, Kader Bouyakoub
  */
 
 return [
